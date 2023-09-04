@@ -1,0 +1,88 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: lightgray;
+}
+
+.navbar-logo {
+  width: 30px;
+  height: auto;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navItem {
+    margin: 0 0.5rem;
+  }
+
+  .navItem a {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navItem {
+    margin: 0 0.8rem;
+  }
+
+  .navItem a {
+    font-size: 16px;
+  }
+}
+
+/* Desktop Size */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navItem {
+    margin: 0 1rem;
+  }
+
+  .navItem a {
+    font-size: 18px;
+  }
+}
